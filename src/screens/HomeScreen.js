@@ -13,7 +13,7 @@ const HomeScreen = () => {
 
     //Adding touchableOpacity -> add faded effect on click
     <TouchableOpacity
-    onPress = {() => console.log('List Pressed')}>
+    onPress = {() => console.log('List is Pressed')}>
       <Text>Go to List Screen</Text>
     </TouchableOpacity>
   </View>;
