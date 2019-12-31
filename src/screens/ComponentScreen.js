@@ -15,11 +15,12 @@ import { Text, StyleSheet, View } from 'react-native';
 //creating component
 const ComponentScreen = () => {
 	const yourname = "Min";
-		return (<View>
-		<Text style={styles.textStyle_1}>Getting started with</Text>
-		<Text style={styles.textStyle_1}>react native!</Text>
-		<Text style={styles.textStyle_2}>My name is {yourname}</Text>
-		</View>
+		return (
+			<View>
+				<Text style={styles.textStyle_1}>Getting started with</Text>
+				<Text style={styles.textStyle_1}>react native!</Text>
+				<Text style={styles.textStyle_2}>My name is {yourname}</Text>
+			</View>
 	);
 };
 
