@@ -13,6 +13,10 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity onPress = {() => navigation.navigate('List')}>
         <Text>Go to List Screen</Text>
       </TouchableOpacity>
+      <Button
+        onPress = {() => navigation.navigate('Image')}
+        title = "Go to Image Screen"
+      />
     </View>
   );
 };
