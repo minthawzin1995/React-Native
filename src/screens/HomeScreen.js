@@ -1,22 +1,20 @@
 import React from 'react';
-import { Text, StyleSheet,View, Button } from 'react-native';
+import { Text,StyleSheet,View,TouchableOpacity,Button } from 'react-native';
 
-const HomeScreen = () => {
-  return <View>
-    <Text style={styles.text}>HomeScreen</Text>
-
-    //Adding a button to Change View
-    <Button
-      title="Go to Component Screen"
-      onpress = {() => console.log('Button Pressed')}
-    />
-
-    //Adding touchableOpacity -> add faded effect on click
-    <TouchableOpacity
-    onPress = {() => console.log('List Pressed')}>
-      <Text>Go to List Screen</Text>
-    </TouchableOpacity>
-  </View>;
+const HomeScreen = ({navigation}) => {
+  //Cannnot put comment between the components
+  return (
+    <View>
+      <Text style={styles.text}>HomeScreen</Text>
+      <Button
+        onPress = {() => navigation.navigate('Components')}
+        title = "Go to Component Screen"
+      />
+      <TouchableOpacity onPress = {() => navigation.navigate('List')}>
+        <Text>Go to List Screen</Text>
+      </TouchableOpacity>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
