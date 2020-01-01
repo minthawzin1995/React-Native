@@ -46,6 +46,11 @@ const HomeScreen = ({navigation}) => {
         title = "ReducerScreen"
         type = "solid"
       />
+      <Button
+        onPress = {() => navigation.navigate('Text')}
+        title= "TextInputScreen"
+        type = "outline"
+      />
     </View>
   );
 };
