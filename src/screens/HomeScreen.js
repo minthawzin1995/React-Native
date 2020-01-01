@@ -40,7 +40,12 @@ const HomeScreen = ({navigation}) => {
         onPress = {() => navigation.navigate('Square')}
         title = "SquareScreen"
         type = "outline"
-      />  
+      />
+      <Button
+        onPress = {() => navigation.navigate('Reducer')}
+        title = "ReducerScreen"
+        type = "solid"
+      />
     </View>
   );
 };
